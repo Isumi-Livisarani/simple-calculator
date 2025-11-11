@@ -31,6 +31,7 @@ function multiply() {
     }
     const result = num1 * num2;
     displayResult(result);
+    
 }
 
     
