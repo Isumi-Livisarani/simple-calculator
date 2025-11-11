@@ -22,8 +22,8 @@ function subtract() {
     alert('Subtraction not implemented yet!');
 }
 
-```javascript
 function multiply() {
+
     const { num1, num2 } = getInputs();
     if (isNaN(num1) || isNaN(num2)) {
         displayResult('Please enter valid numbers');
@@ -32,9 +32,8 @@ function multiply() {
     const result = num1 * num2;
     displayResult(result);
 }
-```
 
-
+    
 // Division function - TO BE IMPLEMENTED BY STUDENT 5
 function divide() {
     alert('Division not implemented yet!');
