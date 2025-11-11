@@ -14,8 +14,16 @@ function displayResult(value) {
 
 // Addition function - TO BE IMPLEMENTED BY STUDENT 2
 function add() {
-    alert('Addition not implemented yet!');
+    const { num1, num2 } = getInputs();
+    if (isNaN(num1) || isNaN(num2)) {
+        displayResult('Please enter valid numbers');
+        return;
+    }
+    const result = num1 + num2;
+    displayResult(result);
 }
+
+
 
 // Subtraction function - TO BE IMPLEMENTED BY STUDENT 3
 function subtract() {
@@ -31,10 +39,30 @@ function subtract() {
 
 // Multiplication function - TO BE IMPLEMENTED BY STUDENT 4
 function multiply() {
-    alert('Multiplication not implemented yet!');
+
+    const { num1, num2 } = getInputs();
+    if (isNaN(num1) || isNaN(num2)) {
+        displayResult('Please enter valid numbers');
+        return;
+    }
+    const result = num1 * num2;
+    displayResult(result);
+    
 }
 
+    
 // Division function - TO BE IMPLEMENTED BY STUDENT 5
 function divide() {
-    alert('Division not implemented yet!');
+    const { num1, num2 } = getInputs();
+    if (isNaN(num1) || isNaN(num2)) {
+        displayResult('Please enter valid numbers');
+        return;
+    }
+    if (num2 === 0) {
+        displayResult('Cannot divide by zero!');
+        return;
+    }
+    const result = num1 / num2;
+    displayResult(result);
+
 }
